@@ -42,7 +42,7 @@
       
 
       // $query = "SELECT * FROM Login WHERE UID = '$user_check' and pass = '$myold'"; 
-      $query = "SELECT pass FROM Login WHERE UID = '$user_check'"; 
+      $query = "SELECT pass FROM Login WHERE UID = '$user_check' and pass = '$myold'"; 
       
       
       $result = mysqli_query($connection,$query);
